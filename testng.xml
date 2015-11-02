@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite"> 
+	<test name="Uptake_Test">
+		<classes>
+			<class name="com.testCases.Test_1_HomePage" />
+			<class name="com.testCases.Test_3_Joinus" />
+			<class name="com.testCases.Test_2_Learnmore" />
+			<class name="com.testCases.Test_4_Blogpage" />
+
+		</classes>
+	</test>
+</suite> 
