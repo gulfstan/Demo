@@ -35,11 +35,11 @@ public class JoinUsPage extends LoadableComponent<JoinUsPage> {
 	public WebElement logbackin;
 
 	@FindBy(id = "iCIMS_Paginator")
-	public WebElement pageIndexdropdown;
+    public WebElement pageIndexdropdown;
 
 	// Selecting page from Drop Down list Box
-	// WebElement pageIndexdropdown =
-	// driver.findElement(By.id("iCIMS_Paginator"));
+
+	
 	public void gotopage() {
 		List<WebElement> options = pageIndexdropdown.findElements(By
 				.tagName("1"));

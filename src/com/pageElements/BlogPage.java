@@ -14,15 +14,25 @@ public class BlogPage extends LoadableComponent<BlogPage> {
 
 		PageFactory.initElements(Browser.driver(), this);
 	}
+	
+
 
 	@FindBy(xpath = ".//a[@href='http://uptake.com/ourblog/']")
 	public WebElement ourBlog;
 
+	
+	@FindBy(xpath = ".//*[@class='share-facebook']")
+	public WebElement facebooklink;
+	  
+	public void getFacebook (){
+		facebooklink.click();
+	}
 	public void getBlogpage() {
-		Browser.open(url);
+	
 		ourBlog.click();
 	}
-
+	
+	
 	@Override
 	protected void isLoaded() throws Error {
 		// TODO Auto-generated method stub
@@ -33,7 +43,9 @@ public class BlogPage extends LoadableComponent<BlogPage> {
 	protected void load() {
 		// TODO Auto-generated method stub
 
+
 	}
 	
 	
+
 }

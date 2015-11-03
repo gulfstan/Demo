@@ -1,6 +1,7 @@
 package com.testCases;
 
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 import com.pageElements.UptakeHomePage;
@@ -30,7 +31,7 @@ public class Test_1_HomePage {
 
 	}
 
-	
+	@AfterClass
 	public void closeDriver() throws Exception {
 		Browser.close();
 		
