@@ -37,16 +37,6 @@ public class JoinUsPage extends LoadableComponent<JoinUsPage> {
 	@FindBy(id = "iCIMS_Paginator")
     public WebElement pageIndexdropdown;
 
-	// Selecting page from Drop Down list Box
-
-	
-	public void gotopage() {
-		List<WebElement> options = pageIndexdropdown.findElements(By
-				.tagName("1"));
-		for (WebElement option : options) {
-			if ("1".equals(option.getText()))
-				option.click();
-		}
 	}
 
 	@Override
